@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <title>Portfolio Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+
+    /* Smooth scroll untuk navigasi */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Fokus yang jelas untuk aksesibilitas */
+    :focus-visible {
+      outline: 3px solid rgba(255, 255, 255, 0.9);
+      outline-offset: 2px;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full w-full bg-[#0F172A] text-white">
+  <div class="h-full w-full overflow-auto"><!-- WRAPPER -->
+   <div class="w-full min-h-full flex flex-col bg-[#0F172A]"><!-- HEADER / NAV -->
+    <header class="w-full border-b border-white/10 bg-[#020617]/80 backdrop-blur">
+     <nav class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3 md:py-4" aria-label="Navigasi utama"><!-- Brand -->
+      <div class="flex items-center space-x-3"><!-- Logo sederhana -->
+       <div><span class="flex items-center space-x-4"> <img src="E:\SMP Kristen Satya Wacana\Tahun Ajaran 2025-2026\2. Bina Talenta\Bina Talenta Tahap 2\Tugas 1\Logo.png" alt="Logo Sekolah" class="h-14 w-14 object-contain"></span>
+       </div>
+       <div class="flex flex-col"><span class="text-sm md:text-base font-semibold leading-tight"> SMP Kristen Satya Wacana </span> <span class="text-[11px] md:text-xs text-slate-300"> Jl. Diponegoro 52 - 60 Salatiga </span>
+       </div>
+      </div><!-- Desktop Nav -->
+      <div class="hidden md:flex items-center space-x-6 text-sm font-medium"><a href="#biodata" class="nav-link text-slate-200 hover:text-white transition-colors">Biodata</a> <a href="#pendidikan" class="nav-link text-slate-200 hover:text-white transition-colors">Riwayat Pendidikan</a> <a href="#linimasa" class="nav-link text-slate-200 hover:text-white transition-colors">Linimasa Pengajaran</a> <a href="#kegiatan" class="nav-link text-slate-200 hover:text-white transition-colors">Kegiatan &amp; Prestasi</a>
+      </div><!-- Mobile Menu Button --> <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center rounded-lg border border-white/15 px-3 py-1.5 text-xs font-medium text-slate-100 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400" aria-expanded="false" aria-controls="mobile-menu" type="button"> <span class="mr-2">Menu</span> <span class="relative w-4 h-4" aria-hidden="true"> <span class="absolute inset-0 flex flex-col justify-between"> <span class="w-full h-[2px] bg-slate-100 transition-transform origin-center"></span> <span class="w-full h-[2px] bg-slate-100 transition-opacity"></span> <span class="w-full h-[2px] bg-slate-100 transition-transform origin-center"></span> </span> </span> </button>
+     </nav><!-- Mobile Nav Panel -->
+     <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-[max-height] duration-300 bg-[#020617] border-t border-white/10" aria-hidden="true">
+      <div class="px-4 py-3 flex flex-col space-y-2 text-sm font-medium"><a href="#biodata" class="mobile-link block rounded-md px-2 py-1 text-slate-100 hover:bg-white/5">Biodata</a> <a href="#pendidikan" class="mobile-link block rounded-md px-2 py-1 text-slate-100 hover:bg-white/5">Riwayat Pendidikan</a> <a href="#linimasa" class="mobile-link block rounded-md px-2 py-1 text-slate-100 hover:bg-white/5">Linimasa Pengajaran</a> <a href="#kegiatan" class="mobile-link block rounded-md px-2 py-1 text-slate-100 hover:bg-white/5">Kegiatan &amp; Prestasi</a>
+      </div>
+     </div>
+    </header><!-- MAIN CONTENT -->
+    <main class="flex-1 w-full"><!-- HERO / HOME -->
+     <section class="w-full border-b border-white/10 bg-gradient-to-br from-[#020617] via-[#0B1120] to-[#1D283A]">
+      <div class="max-w-5xl mx-auto px-4 py-10 md:py-16 lg:py-20 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center"><!-- Teks -->
+       <div>
+        <p class="text-xs uppercase tracking-[0.2em] text-cyan-300 mb-3">PORTFOLIO DIGITAL</p>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">Natalia Prabandari, M.Kom.</h1>
+        <h2 class="text-lg md:text-xl font-semibold text-cyan-200 mb-4">Guru / Informatika</h2>
+        <p class="text-sm md:text-base text-slate-200 leading-relaxed mb-6">Membimbing penguasaan konsep dasar hingga lanjutan dalam teknologi dan komputasi, didukung pengalaman lebih dari 18 tahun. Berkomitmen pada pendidikan yang relevan dengan perkembangan digital terkini, aktif mengintegrasikan inovasi seperti AI Tools, Coding Games, atau Project-Based Learning. </p>
+       
+        <div class="flex flex-wrap gap-3"><a href="#biodata" class="inline-flex items-center justify-center rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-sm font-semibold px-4 py-2.5 shadow-md shadow-cyan-500/40 transition-colors"> Lihat Profil Lengkap </a> 
+        </div>
+       </div><!-- Area Gambar / Visual Hero -->
+       <div class="relative"><!-- Kartu utama (bisa Anda sesuaikan dengan gambar dari presentasi di Canva) -->
+        <div class="relative rounded-2xl bg-[#020617] border border-white/10 px-5 py-6 md:px-6 md:py-7 shadow-2xl shadow-sky-900/60 overflow-hidden"><!-- Garis dekoratif -->
+         <div class="absolute -right-12 -top-10 w-40 h-40 rounded-full bg-cyan-500/10 border border-cyan-400/40 blur-0"></div>
+         <div class="absolute -left-14 -bottom-16 w-48 h-48 rounded-full bg-emerald-500/5 border border-emerald-400/40"></div>
+         <div class="relative flex flex-col space-y-4">
+          <div class="flex items-center justify-between gap-3">
+           <div>
+            
+           <div> <img src="E:\SMP Kristen Satya Wacana\Tahun Ajaran 2025-2026\2. Bina Talenta\Bina Talenta Tahap 2\Tugas 1\pp.png" alt="Foto Profil" class="h-15 w-15 object-contain">  
+           </div>
+          </div>
+          
+        </div><!-- Badge kecil dekoratif -->
+        <div class="hidden md:flex absolute -right-2 -bottom-4 translate-y-3">
+         <div class="rounded-xl bg-[#020617] border border-white/15 px-4 py-2.5 shadow-lg shadow-black/70 flex items-center gap-3">
+          <div class="w-7 h-7 rounded-lg bg-cyan-500/15 border border-cyan-400/40 flex items-center justify-center text-xs">
+           ⭐
+          </div>
+          <div>
+           <p class="text-[11px] font-semibold text-slate-100 leading-tight">Portofolio Terverifikasi</p>
+           <p class="text-[10px] text-slate-400 leading-tight">Menampilkan rekam jejak profesional secara ringkas.</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section><!-- BIODATA -->
+     <section id="biodata" class="w-full border-b border-white/10 bg-[#020617]">
+      <div class="max-w-5xl mx-auto px-4 py-10 md:py-14">
+       <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Biodata</h2>
+       <div class="grid grid-cols-1 md:grid-cols-[1.2fr,1.3fr] gap-6 md:gap-8"><!-- Info dasar -->
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+         <h3 class="text-lg font-semibold text-cyan-200 mb-4">Data Pribadi</h3>
+         <dl class="space-y-3 text-sm md:text-[15px]">
+          <div class="flex flex-col">
+           <dt class="text-slate-400 text-xs uppercase tracking-[0.16em] mb-0.5">
+            Nama Lengkap
+           </dt>
+           <dd class="text-slate-100 font-medium">
+            Natalia Prabandari, M.Kom.
+           </dd>
+          </div>
+          <div class="flex flex-col">
+           <dt class="text-slate-400 text-xs uppercase tracking-[0.16em] mb-0.5">
+            Tempat, Tanggal Lahir
+           </dt>
+           <dd class="text-slate-100">
+            Kab. Semarang, 11 Januari 1985
+           </dd>
+          </div>
+          <div class="flex flex-col">
+           <dt class="text-slate-400 text-xs uppercase tracking-[0.16em] mb-0.5">
+            Alamat
+           </dt>
+           <dd class="text-slate-100">
+            Rekesan RT. 20 RW. 06 Tegalwaton, Kec. Tengaran, Kab. Semarang
+           </dd>
+          </div>
+          <div class="flex flex-col">
+           <dt class="text-slate-400 text-xs uppercase tracking-[0.16em] mb-0.5">
+            Kontak
+           </dt>
+           <dd class="text-slate-100">
+           nataliaprabandari11@guru.smp.belajar.id • 08191451585
+           </dd>
+          </div>
+<div>
+<img src="E:\SMP Kristen Satya Wacana\Tahun Ajaran 2025-2026\2. Bina Talenta\Bina Talenta Tahap 2\Tugas 1\fam.jpg" alt="Foto fam">  
+</div>
+         </dl>
+        </div><!-- Keluarga -->
+        <div class="space-y-5">
+         <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+          <h3 class="text-lg font-semibold text-cyan-200 mb-3">Profil Singkat</h3>
+          <img src="E:\SMP Kristen Satya Wacana\Tahun Ajaran 2025-2026\2. Bina Talenta\Bina Talenta Tahap 2\Tugas 1\login.png" alt="Foto smp">  
+         </div>
+         <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+          <h3 class="text-lg font-semibold text-cyan-200 mb-3">Kompetensi</h3>
+          <ul class="flex flex-wrap gap-2 text-[11px] md:text-xs">
+           <li class="px-3 py-1.5 rounded-full bg-cyan-500/10 text-cyan-200 border border-cyan-500/30">Microsoft Office</li>
+           <li class="px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-200 border border-emerald-500/30">Sistem Komputer</li>
+           <li class="px-3 py-1.5 rounded-full bg-indigo-500/10 text-indigo-200 border border-indigo-500/30">Koding</li>
+           <li class="px-3 py-1.5 rounded-full bg-cyan-500/10 text-cyan-200 border border-cyan-500/30">Kecerdasan Artificial</li>
+           <li class="px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-200 border border-emerald-500/30">Karakter</li>
+  <li class="px-3 py-1.5 rounded-full bg-cyan-500/10 text-cyan-200 border border-cyan-500/30">Computational Thinking</li>
+  <li class="px-3 py-1.5 rounded-full bg-cyan-500/10 text-cyan-200 border border-cyan-500/30">Literasi Digital</li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+     </section><!-- RIWAYAT PENDIDIKAN -->
+     <section id="pendidikan" class="w-full border-b border-white/10 bg-[#020617]">
+      <div class="max-w-5xl mx-auto px-4 py-10 md:py-14">
+       <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Riwayat Pendidikan</h2>
+       <div class="space-y-4"><!-- Item pendidikan -->
+<article class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-2">
+          <div>
+           <h3 class="text-base md:text-lg font-semibold text-cyan-200">Magister Sistem Informasi</h3>
+           <p class="text-sm text-slate-200">Progdi Magister Sistem Informasi - Fakultas Teknologi Informasi • Universitas Kristen Satya Wacana</p>
+          </div>
+          <p class="text-xs text-slate-400 md:text-right">2023 – 2025</p>
+         </div>
+         <p class="text-sm text-slate-200 leading-relaxed">Selama menempuh pendidikan Magister Sistem Informasi di FTI UKSW, fokus pada penguasaan manajemen dan strategi tata kelola TI untuk mendukung tujuan organisasi, yang didukung oleh kemampuan analitis mendalam. Tesis berjudul Analisis Faktor yang Mempengaruhi Penerapan Learning Management System (LMS) di SMP Kristen Satya Wacana Salatiga Menggunakan Perspektif Technology Acceptance Model (TAM). Penelitian kuantitatif ini secara spesifik menganalisis korelasi antara Perceived Usefulness (Manfaat yang Dirasakan) dan Perceived Ease of Use (Kemudahan Penggunaan) terhadap niat perilaku pengguna LMS, memberikan kontribusi strategis dan rekomendasi praktis mengenai faktor-faktor adopsi kunci untuk implementasi teknologi pendidikan yang efektif.</p>
+        </article>
+<article class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-2">
+          <div>
+           <h3 class="text-base md:text-lg font-semibold text-cyan-200">Sarjana Komputer</h3>
+           <p class="text-sm text-slate-200">Progdi Teknik Informatika - Fakultas Teknologi Informasi • Universitas Kristen Satya Wacana</p>
+          </div>
+          <p class="text-xs text-slate-400 md:text-right">2007 – 2012</p>
+         </div>
+         <p class="text-sm text-slate-200 leading-relaxed">Memperoleh fondasi yang kuat dalam pengembangan perangkat lunak, pemrograman, dan analisis sistem informasi. Kompetensi ini dapat diaplikasikan secara langsung dalam penyelesaian Tugas Akhir yang berjudul Perancangan dan Implementasi Sistem Informasi Akademik Sekolah Berbasis Web di Satya Wacana Children Centre (SWCC) Salatiga. Proyek full-stack ini berfokus pada analisis kebutuhan organisasi dan pengembangan sistem web yang bertujuan untuk menyentralisasi pengelolaan data administrasi, jadwal kegiatan, dan informasi siswa, sehingga berhasil meningkatkan efisiensi operasional dan aksesibilitas informasi bagi stakeholder SWCC.</p>
+        </article>
+        <article class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-2">
+          <div>
+           <h3 class="text-base md:text-lg font-semibold text-cyan-200">Ahli Madya Komputer</h3>
+           <p class="text-sm text-slate-200">Program Profesional Teknik Informatika • Universitas Kristen Satya Wacana</p>
+          </div>
+          <p class="text-xs text-slate-400 md:text-right">2003 – 2006</p>
+         </div>
+         <p class="text-sm text-slate-200 leading-relaxed">Keahlian praktis yang kuat dalam pemrograman desktop/web, administrasi jaringan, dan analisis data dasar.  Dengan Tugas Akhir yang berfokus pada Perancangan dan Implementasi Aplikasi Konversi Not Angka Menjadi Suara Menggunakan Borland Delphi, yang mengasah kemampuan dalam pengembangan perangkat lunak dan implementasi algoritma.</p>
+        </article>
+<article class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-2">
+          <div>
+           <h3 class="text-base md:text-lg font-semibold text-cyan-200">Sekolah Menengah Atas</h3>
+           <p class="text-sm text-slate-200">SMA Negeri 3 Salatiga</p>
+          </div>
+          <p class="text-xs text-slate-400 md:text-right"> 2000 – 2003</p>
+         </div>
+         
+        </article>
+<article class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-2">
+          <div>
+           <h3 class="text-base md:text-lg font-semibold text-cyan-200">Sekolah Menengah Pertama</h3>
+           <p class="text-sm text-slate-200">SMP Negeri 6 Salatiga</p>
+          </div>
+          <p class="text-xs text-slate-400 md:text-right"> 2000 – 2003</p>
+         </div>
+         
+        </article>
+        
+<article class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-2">
+          <div>
+           <h3 class="text-base md:text-lg font-semibold text-cyan-200">Sekolah Dasar</h3>
+           <p class="text-sm text-slate-200">SD Negeri Tegalwaton 02</p>
+          </div>
+          <p class="text-xs text-slate-400 md:text-right"> 1991 – 1997</p>
+         </div>
+         
+        </article>
+
+
+
+
+<!-- Tambahkan item lain sesuai kebutuhan -->
+       </div>
+      </div>
+     </section><!-- LINIMASA PENGAJARAN -->
+     <section id="linimasa" class="w-full border-b border-white/10 bg-[#020617]">
+      <div class="max-w-5xl mx-auto px-4 py-10 md:py-14">
+       <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Linimasa Pengajaran</h2>
+      
+       <div class="relative"><!-- Garis vertikal -->
+        <div class="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-slate-700/60"></div>
+        <div class="space-y-6"><!-- Item timeline -->
+         <article class="relative pl-10 md:pl-16"><!-- Titik -->
+          <div class="absolute left-2.5 md:left-4 top-1 w-3 h-3 rounded-full bg-cyan-400 border-2 border-[#020617] shadow shadow-cyan-500/40"></div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-4 md:px-5 md:py-5">
+           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-1.5">
+            <h3 class="text-sm md:text-base font-semibold text-cyan-200">Guru Mata Pelajaran / Informatika</h3>
+            <p class="text-xs text-slate-400">2022 – Sekarang</p>
+           </div>
+           
+          </div>
+         </article>
+         <article class="relative pl-10 md:pl-16"><!-- Titik -->
+          <div class="absolute left-2.5 md:left-4 top-1 w-3 h-3 rounded-full bg-cyan-400 border-2 border-[#020617] shadow shadow-cyan-500/40"></div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-4 md:px-5 md:py-5">
+           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-1.5">
+            <h3 class="text-sm md:text-base font-semibold text-cyan-200">Guru Mata Pelajaran / Informatika, PAK, BTIK</h3>
+            <p class="text-xs text-slate-400">2021 – 2022</p>
+           </div>
+           
+          </div>
+         </article>
+<article class="relative pl-10 md:pl-16"><!-- Titik -->
+          <div class="absolute left-2.5 md:left-4 top-1 w-3 h-3 rounded-full bg-cyan-400 border-2 border-[#020617] shadow shadow-cyan-500/40"></div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-4 md:px-5 md:py-5">
+           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-1.5">
+            <h3 class="text-sm md:text-base font-semibold text-cyan-200">Guru Mata Pelajaran / Prakarya, Seni Budaya dan BTIK</h3>
+            <p class="text-xs text-slate-400">2016 – 2021</p>
+           </div>
+           
+          </div>
+         </article>
+<article class="relative pl-10 md:pl-16"><!-- Titik -->
+          <div class="absolute left-2.5 md:left-4 top-1 w-3 h-3 rounded-full bg-cyan-400 border-2 border-[#020617] shadow shadow-cyan-500/40"></div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-4 md:px-5 md:py-5">
+           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-1.5">
+            <h3 class="text-sm md:text-base font-semibold text-cyan-200">Guru Mata Pelajaran / Prakarya, Seni Budaya dan BTIK</h3>
+            <p class="text-xs text-slate-400">2015 – 2016</p>
+           </div>
+           
+          </div>
+         </article>
+<article class="relative pl-10 md:pl-16"><!-- Titik -->
+          <div class="absolute left-2.5 md:left-4 top-1 w-3 h-3 rounded-full bg-cyan-400 border-2 border-[#020617] shadow shadow-cyan-500/40"></div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-4 md:px-5 md:py-5">
+           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-1.5">
+            <h3 class="text-sm md:text-base font-semibold text-cyan-200">Guru Mata Pelajaran / Prakarya dan Seni Budaya</h3>
+            <p class="text-xs text-slate-400">2013 – 2015</p>
+           </div>
+           
+          </div>
+         </article>
+<article class="relative pl-10 md:pl-16"><!-- Titik -->
+          <div class="absolute left-2.5 md:left-4 top-1 w-3 h-3 rounded-full bg-cyan-400 border-2 border-[#020617] shadow shadow-cyan-500/40"></div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-4 md:px-5 md:py-5">
+           <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 mb-1.5">
+            <h3 class="text-sm md:text-base font-semibold text-cyan-200">Guru Mata Pelajaran / Teknologi Informasi dan Komunikasi </h3>
+            <p class="text-xs text-slate-400">2007 – 2013</p>
+           </div>
+           
+          </div>
+         </article>
+<!-- Tambah item timeline lain jika perlu -->
+        </div>
+       </div>
+      </div>
+     </section><!-- KEGIATAN PENINGKATAN KOMPETENSI & PRESTASI -->
+     <section id="kegiatan" class="w-full bg-[#020617]">
+      <div class="max-w-5xl mx-auto px-4 py-10 md:py-14 space-y-10"><!-- Kegiatan Peningkatan Kompetensi -->
+       <div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Kegiatan Peningkatan Kompetensi</h2>
+      
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+         <article class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+          <h3 class="text-base md:text-lg font-semibold text-cyan-200 mb-1">Workshop AI Goes To School</h3>
+          <p class="text-xs text-slate-400 mb-2">Mafindo Institute • 2025</p>
+         <img src="E:\SMP Kristen Satya Wacana\Tahun Ajaran 2025-2026\2. Bina Talenta\Bina Talenta Tahap 2\Tugas 1\aigts.jpg" alt="Foto Profil" class="h-15 w-15 object-contain">
+         </article>
+         <article class="rounded-2xl border border-white/10 bg-slate-900/70 px-5 py-5 md:px-6 md:py-6">
+          <h3 class="text-base md:text-lg font-semibold text-cyan-200 mb-1">Sertifikasi Profesional</h3>
+          <p class="text-xs text-slate-400 mb-2">Universitas Negeri Yogyakarta • 2023</p>
+          <img src="E:\SMP Kristen Satya Wacana\Tahun Ajaran 2025-2026\2. Bina Talenta\Bina Talenta Tahap 2\Tugas 1\ppg.jpg" alt="Foto Profil" class="h-15 w-15 object-contain">
+         </article>
+        </div>
+       </div><!-- Prestasi & Penghargaan -->
+       <div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Prestasi &amp; Penghargaan</h2>
+        <p class="text-sm md:text-base text-slate-300 mb-6">Pengakuan formal atas kontribusi dan kinerja Anda, baik di bidang pendidikan maupun bidang terkait lainnya.</p>
+        <div class="space-y-4">
+         <article class="rounded-2xl border border-[#22C55E]/40 bg-emerald-500/5 px-5 py-5 md:px-6 md:py-6">
+          <h3 class="text-base md:text-lg font-semibold text-emerald-200 mb-1">Juara III Inovasi Pembelajaran Tingkat Provinsi </h3>
+          <p class="text-xs text-emerald-200/80 mb-2">LP3S • 2025</p>
+          <img src="E:\SMP Kristen Satya Wacana\Tahun Ajaran 2025-2026\2. Bina Talenta\Bina Talenta Tahap 2\Tugas 1\inobel.jpg" alt="Foto Profil" class="h-15 w-15 object-contain">
+         </article>
+         </article>
+        
+        
+        </div>
+       </div>
+     </section>
+    </main><!-- FOOTER -->
+    <footer class="w-full border-t border-white/10 bg-[#020617]">
+     <div class="max-w-5xl mx-auto px-4 py-5 md:py-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+      <p class="text-xs md:text-[13px] text-slate-400">© <span id="year"></span> Natalia Prabandari, M.Kom. Semua hak dilindungi.</p>
+      <p class="text-[11px] md:text-xs text-slate-500">Portofolio digital disusun berdasarkan riwayat pengajaran &amp; kegiatan profesional.</p>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script>
+    // Tahun di footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileButton && mobileMenu) {
+      mobileButton.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+
+        if (!expanded) {
+          mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+          mobileMenu.setAttribute('aria-hidden', 'false');
+        } else {
+          mobileMenu.style.maxHeight = '0px';
+          mobileMenu.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      // Tutup menu ketika link diklik
+      const mobileLinks = mobileMenu.querySelectorAll('.mobile-link');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileButton.setAttribute('aria-expanded', 'false');
+          mobileMenu.style.maxHeight = '0px';
+          mobileMenu.setAttribute('aria-hidden', 'true');
+        });
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9abddd2a8036bd94',t:'MTc2NTM4MTQ3MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
